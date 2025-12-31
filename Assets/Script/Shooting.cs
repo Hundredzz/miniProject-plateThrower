@@ -35,7 +35,7 @@ public GameObject bulletPrefab; // ลาก Prefab กระสุนมาใ�
             // เราจะใช้ตัวคูณ (Sensitivity) เพื่อกำหนดความแรงในการหมุน
             // เช่น ถ้าคูณด้วย -0.1: เมาส์สูงขึ้น 100 pixel มุม Z จะลดลง -10 องศา
             
-            float xRotation = distanceFromCenterY * xSensitivity - 90f;
+            float xRotation = distanceFromCenterY * xSensitivity;
 
             // 3. คำนวณการหมุนหันไปหาเป้าหมาย
             Quaternion targetRotation = Quaternion.LookRotation(shootDirection);
